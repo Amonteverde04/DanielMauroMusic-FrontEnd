@@ -1,0 +1,121 @@
+.FeaturedAlbumContainer {
+    z-index: 1;
+    background-color: rgba(28, 36, 44, .7);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    top: 82%;
+}
+
+.Featured-Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+    width: 75%;
+    height: 100%;
+    column-gap: 0;
+}
+
+.AlbumPic {
+    width: 50%;
+    max-height: 11em;
+    float: left;
+    border-radius: 5px;
+}
+
+.AlbumDesc {
+    border-radius: 5px;
+    max-height: 28%;
+    font-size: 15px;
+    color: white;
+}
+
+.AlbumLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    background-color: #f7f0a7;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.AlbumLink:active {
+    transition: none !important;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (min-width:1080px){
+    .FeaturedAlbumContainer {
+        z-index: 1;
+        background-color: rgba(28, 36, 44, .7);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        top: 101%;
+    }
+    
+    .Featured-Description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5%;
+        width: 75%;
+        height: 100%;
+        column-gap: 0;
+    }
+    
+    .AlbumPic {
+        width: 20%;
+        max-height: 10em;
+        float: left;
+        border-radius: 5px;
+    }
+    
+    .AlbumDesc {
+        text-align: center;
+        border-radius: 5px;
+        max-height: 28%;
+        width: 60%;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .AlbumLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 10%;
+        border-radius: 5px;
+        font-size: 15px;
+        color: black;
+        background-color: #f7f0a7;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .AlbumLink:hover {
+        transition: ease-in .2s;
+        background-color: #FFBEB9;
+        color: white;
+      }
+    
+    .AlbumLink:active {
+        transition: none !important;
+        background-color: black;
+        color: white;
+    }
+}

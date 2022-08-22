@@ -1,0 +1,270 @@
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+  background-color: black;
+}
+
+.Shader {
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .50);
+  height: 100vh;
+  width: 100vw;
+}
+
+.BackgroundGif {
+  z-index: 0;
+  position: fixed;
+  height: 50vh;
+  width: 100vw;
+}
+
+.NewsLetter {
+  z-index: 2;
+  position: relative;
+  background-image: url(https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20%;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #FFBEB9;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Details {
+  color: white;
+  font-size: 25px;
+}
+
+.InputBox {
+  width: 80%;
+  height: 45px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 30px;
+  border-style: none;
+  font-size: large;
+  padding-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  text-align: center;
+}
+
+.NewsButtonContainer {
+  z-index: 6;
+  position: absolute;
+  opacity: .5;
+  width: 200px;
+  height: 100px;
+  top: 82%;
+}
+
+.NewsButton {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(100%) sepia(0%) saturate(1475%) hue-rotate(179deg) brightness(114%) contrast(100%);
+  width: 60px;
+  height: 60px;
+  background: none;
+  border-style: none;
+}
+
+.NewsButton:active {
+  opacity: .7;
+}
+
+.SubmitButton {
+  background-color: #F8F2AE;
+  width: 60%;
+  height: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 15px;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.SubmitButton:hover {
+  transition: ease-in .2s;
+  background-color: #FFBEB9;
+  color: white;
+}
+
+.SubmitButton:active {
+  transition: none;
+  background-color: black;
+  color: white;
+}
+
+#hidden {
+  display: none;
+}
+
+#flip {
+  transition: ease-in .1s;
+  transform: rotateX(180deg);
+  opacity: 1;
+}
+
+.ErrMessage {
+  color: red;
+}
+
+.SuccMessage {
+  color: #F8F2AE;
+}
+
+@media only screen and (min-width:1080px) {
+  .App-header {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .Shader {
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .50);
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .BackgroundGif {
+    z-index: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .NewsLetter {
+    position: relative;
+    background-image: url(https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 340px;
+    width: 950px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #FFBEB9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .Details {
+    color: white;
+    margin-top: 50px;
+  }
+
+  .InputBox {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: large;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+  }
+
+  .NewsButtonContainer {
+    /*background-color: red;*/
+    z-index: 6;
+    position: absolute;
+    opacity: .5;
+    width: 200px;
+    height: 100px;
+    bottom: 10%;
+  }
+
+  .NewsButton {
+    background-color: aqua;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(100%) sepia(0%) saturate(1475%) hue-rotate(179deg) brightness(114%) contrast(100%);
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-style: none;
+  }
+
+  .NewsButtonContainer:hover {
+    transform: translateY(-5px);
+  }
+
+  .NewsButton:active {
+    opacity: .7;
+  }
+
+  #hidden {
+    opacity: 0;
+  }
+
+  #flip {
+    transition: ease-in .1s;
+    transform: rotateX(180deg);
+  }
+
+  .ButtonLabel {
+    position: relative;
+    display: block;
+    right: 75px;
+    width: 200px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+
+  .SubmitButton {
+    background-color: #F8F2AE;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .SubmitButton:hover {
+    transition: ease-in .2s;
+    background-color: #FFBEB9;
+    color: white;
+  }
+
+  .SubmitButton:active {
+    transition: none;
+    background-color: black;
+    color: white;
+  }
+
+  #hidden {
+    display: none;
+  }
+
+  .ErrMessage {
+    color: red;
+  }
+  
+  .SuccMessage {
+    color: #F8F2AE;
+  }
+}

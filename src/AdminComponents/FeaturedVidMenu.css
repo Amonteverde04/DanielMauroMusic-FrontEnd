@@ -1,0 +1,31 @@
+.FeaturedVidContainer {
+    width: 90%;
+    overflow: hidden;
+    border: solid 1px black;
+    margin-top: 5%;
+    background-color: white;
+}
+
+.LabelContainer {
+    background-color: black;
+    text-align: center;
+}
+
+.FeaturedVidLabel {
+    width: 100%;
+    color: white;
+}
+
+.FeaturedVidInput {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 2em;
+}
+
+.FeaturedVidSubmit {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 45px;
+}

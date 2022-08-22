@@ -1,0 +1,114 @@
+.NavBar {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, .25);
+  position: fixed;
+  width: 100%;
+  height: 21%;
+  top: 0;
+}
+
+.Logo {
+  position: absolute;
+  width: 40%;
+  height: 75%;
+  left: 5%;
+  top: 15%;
+}
+
+.Pages {
+  position: absolute;
+  height: 72%;
+  display: block;
+  margin-top: 1em;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Socials {
+  position: absolute;
+  height: 395px;
+  display: block;
+  top: 140%;
+  right: .5em;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.SocialItem {
+  color: #F8F2AE;
+}
+
+@media only screen and (min-width:600px) {
+  .Logo {
+    position: absolute;
+    width: 30%;
+    height: 75%;
+    left: 5%;
+    top: 15%;
+  }
+}
+
+@media only screen and (min-width:1080px){
+  .NavBar {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .25);
+    position: fixed;
+    width: 100%;
+    height: 19%;
+    top: 0;
+  }
+  
+  .Logo {
+    position: absolute;
+    height: 70%;
+    width: 12%;
+    left: 3%;
+  }
+  
+  .Pages {
+    position: absolute;
+    height: 50%;
+    width: 30%;
+    display: block;
+    top: 13%;
+    left: 17.5%;
+  }
+  
+  .Socials {
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    display: block;
+    right: 3.5%;
+    top: 27%;
+  }
+  
+  .SocialItem {
+    position: relative;
+    top: 30%;
+    margin-right: 7%;
+    color: #F8F2AE;
+  }
+  
+  .SocialItem:hover {
+    transition: ease-in .15s;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(0%) hue-rotate(32deg) brightness(105%) contrast(100%);
+  }
+  
+  .Instagram {
+    top: 30px;
+  }
+  
+  .Tiktok {
+    top: 30px;
+  }
+  
+  .Spotify {
+    top: 30px;
+  }
+}

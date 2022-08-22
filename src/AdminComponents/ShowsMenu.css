@@ -1,0 +1,149 @@
+.ShowsMenuContainer {
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.ShowsTable {
+    border: solid 1px black;
+    width: 100%;
+    text-align: center;
+}
+
+#TableHead {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#TableBody {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.ShowTableItem {
+    overflow: hidden;
+    border: solid 1px black;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.TrashButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 45px;
+    margin-bottom: 1em;
+}
+
+.PlusButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 45px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.TrashButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 45px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.PlusButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.TableFoot {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Trash, .Plus {
+    width: 2em;
+    height: 2em;
+}
+
+.ShowTableFootButton {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoadingCircle {
+    z-index: 10;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#Circle {
+    width: 50px;
+    height: 50px;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.AddShow {
+    margin: 2% auto;
+}
+
+#ShowInput {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 2em;
+}
+
+.ShowSubmit {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 45px;
+}

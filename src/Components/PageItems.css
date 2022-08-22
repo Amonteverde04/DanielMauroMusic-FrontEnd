@@ -1,0 +1,27 @@
+.PageItem {
+  /*background-color: aqua;*/
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.PageItem:hover, .SocialItem:hover {
+  transition: ease-in .15s;
+  color: white;
+}
+
+
+@media only screen and (min-width:1080px){
+  .PageItem {
+      /*background-color: aqua;*/
+      position: relative;
+      top: 30%;
+      margin-right: 36px;
+    }
+
+    .PageItem:hover, .SocialItem:hover {
+      transition: ease-in .15s;
+      color: white;
+    }
+}

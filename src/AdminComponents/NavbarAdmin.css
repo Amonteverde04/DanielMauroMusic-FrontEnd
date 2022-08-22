@@ -1,0 +1,16 @@
+.NavbarAdmin {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 2em;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.GoHome {
+    text-align: center;
+    width: 25%;
+    color: white;
+}

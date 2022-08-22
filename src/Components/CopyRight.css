@@ -1,0 +1,32 @@
+.CopyRightContainer {
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 93%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+h2 {
+    font-size: medium;
+}
+
+@media only screen and (min-width:1080px){
+    .CopyRightContainer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    h2 {
+        font-size: medium;
+    }
+}

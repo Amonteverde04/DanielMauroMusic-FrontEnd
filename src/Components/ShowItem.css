@@ -1,0 +1,80 @@
+.VenueName {
+    font-weight: bolder;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Address {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PurchaseButton {
+    position: relative;;
+    background-color: #F8F2AE;
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .PurchaseButton:hover {
+    transition: ease-in .2s;
+    background-color: #FFBEB9;
+    color: white;
+  }
+  .PurchaseButton:active {
+    transition: none;
+    background-color: black;
+    color: white;
+  }
+
+  .PurchaseLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50px;
+    height: 100%;
+    color: black;
+  }
+
+  .PurchaseLink:active {
+    color: white;
+  }
+
+@media only screen and (min-width:1080px){
+  .VenueName {
+      font-weight: bolder;
+      border: 1px solid;
+  }
+
+  .Address {
+      position: relative;
+      width: 100%;
+  }
+
+  .PurchaseButton {
+      background-color: #F8F2AE;
+      width: 200px;
+      font-size: 15px;
+      border-radius: 50px;
+      border-style: none;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .PurchaseButton:hover {
+      transition: ease-in .2s;
+      background-color: #FFBEB9;
+      color: white;
+    }
+
+    .PurchaseButton:active {
+      transition: none;
+      background-color: black;
+      color: white;
+    }
+}

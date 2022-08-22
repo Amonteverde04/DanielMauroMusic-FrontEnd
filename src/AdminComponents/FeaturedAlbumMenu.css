@@ -1,0 +1,45 @@
+.FeaturedAlbumMenuContainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.FeaturedAlbumForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+#FormHeading {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#FeaturedAlbumLabel {
+    width: 90%;
+    display: block;
+}
+
+#FeaturedAlbumInput {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 2em;
+}
+
+#FeaturedAlbumSubmit {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 45px;
+}

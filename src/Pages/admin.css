@@ -1,0 +1,87 @@
+.App-header-Admin {
+    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    left: 0;
+    right: 0;
+    top: 4%;
+    overflow: auto;
+}
+
+.LogInContainer {
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.LogInForm {
+    color: #ffc1bb;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+#LogInGreeting {
+    text-align: center;
+    color: #f7f0a7;
+}
+
+#LogInInput {
+    width: 80%;
+    height: 2em;
+    text-align: center;
+}
+
+.LogInSubmit {
+    position: relative;;
+    background-color: #F8F2AE;
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+  .LogInSubmit:hover {
+    transition: ease-in .2s;
+    background-color: #FFBEB9;
+    color: white;
+  }
+  .LogInSubmit:active {
+    transition: none;
+    background-color: black;
+    color: white;
+    border: solid 1px #F8F2AE;
+  }
+
+.ErrorLogIn {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.OutsideContainer {
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+

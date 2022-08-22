@@ -1,0 +1,32 @@
+.Loading {
+    z-index: 10;
+    text-align: center;
+    color: white;
+}
+
+.App-header-Media {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: calc(10px + 2vmin);
+    color: black;
+}
+
+.MediaContent {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.BGGifMedia {
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
