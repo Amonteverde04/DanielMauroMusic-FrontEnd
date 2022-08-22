@@ -58,7 +58,6 @@ function HomePage() {
     return (
         <header className="App-header">
           <NavBar logo = {logo}></NavBar>
-          <img className="BackgroundGif" src="https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif" alt="Background video of live concert."/>
           <form className="NewsLetter" id={ID} onSubmit={handleSubmit}>
               <p className="ErrMessage" id={message.error}>There was an error sending your information.<br></br> Please reload the page and try again!</p>
               <p className="SuccMessage" id={message.success}>Your information has successfully been sent!</p>

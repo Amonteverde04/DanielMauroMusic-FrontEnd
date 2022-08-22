@@ -7,22 +7,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
   overflow: hidden;
-  background-color: black;
-}
-
-.Shader {
-  z-index: 1;
-  position: absolute;
-  background-color: rgba(0, 0, 0, .50);
-  height: 100%;
-  width: 100%;
-}
-
-.BackgroundGif {
-  z-index: 0;
-  position: fixed;
-  height: 50vh;
-  width: 100vw;
+  background-image: url("https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .NewsLetter {
