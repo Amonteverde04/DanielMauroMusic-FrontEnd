@@ -14,7 +14,7 @@ function NavBar(props) {
   function renderPageLinks() {
     let links = [];
     for(let i = 0; i < pages.length; i++) {
-      links.push(<PageItems key={pageRef[i]} PageRefs={pageRef[i]} PageName={pages[i]}/>)
+      links.push(<PageItems id='Item' key={pageRef[i]} PageRefs={pageRef[i]} PageName={pages[i]}/>)
     }
     return links;
   }

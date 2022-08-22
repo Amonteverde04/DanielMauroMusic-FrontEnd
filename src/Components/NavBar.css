@@ -3,25 +3,26 @@
   background-color: rgba(0, 0, 0, .25);
   position: fixed;
   width: 100%;
-  height: 21%;
+  height: 10em;
   top: 0;
 }
 
 .Logo {
   position: absolute;
   width: 40%;
-  height: 75%;
+  height: 7em;
   left: 5%;
   top: 15%;
 }
 
 .Pages {
-  position: absolute;
-  height: 72%;
-  display: block;
-  margin-top: 1em;
-  right: 5%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 10em;
+  right: 10%;
+  width: 5em;
   flex-direction: column;
 }
 
