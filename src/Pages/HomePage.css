@@ -2,7 +2,6 @@
   z-index: -10;
   background-color: black;
   overflow: hidden;
-  max-height: 100vh;
 }
 
 .App-header {
@@ -128,7 +127,6 @@
     z-index: -10;
     background-color: black;
     overflow: hidden;
-    max-height: 100vh;
 }
 
   .App-header {
