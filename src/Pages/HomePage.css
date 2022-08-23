@@ -1,3 +1,8 @@
+.App {
+  z-index: -10;
+  background-color: black;
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -9,7 +14,8 @@
   overflow: hidden;
   background-image: url("https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 50%;
+  background-position: center;
 }
 
 .NewsLetter {
@@ -115,6 +121,12 @@
 }
 
 @media only screen and (min-width:1080px) {
+
+  .App {
+    z-index: -10;
+    background-color: black;
+  }
+
   .App-header {
     position: relative;
     min-height: 100vh;
@@ -125,21 +137,9 @@
     font-size: calc(10px + 2vmin);
     color: white;
     overflow: hidden;
-  }
-  
-  .Shader {
-    z-index: 1;
-    position: fixed;
-    background-color: rgba(0, 0, 0, .50);
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  .BackgroundGif {
-    z-index: 0;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
+    background-image: url("https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 110%;
   }
 
   .NewsLetter {
