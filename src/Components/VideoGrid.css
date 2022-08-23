@@ -15,7 +15,7 @@
 @media only screen and (max-height: 480px) { 
     .GridContainer {
         position: absolute;
-        top: 245%;
+        top: 266%;
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 100px;
