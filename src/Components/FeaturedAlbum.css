@@ -66,6 +66,43 @@
         height: 100%;
         top: 132%;
     }
+
+    .Featured-Description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5%;
+        width: 75%;
+        height: 100%;
+        column-gap: 0;
+    }
+    
+    .AlbumPic {
+        width: 40%;
+        max-height: 10em;
+        border-radius: 5px;
+    }
+    
+    .AlbumDesc {
+        border-radius: 5px;
+        max-height: 28%;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .AlbumLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 15px;
+        color: black;
+        background-color: #f7f0a7;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
 }
 
 @media only screen and (min-width:1080px){
