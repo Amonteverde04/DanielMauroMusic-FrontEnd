@@ -12,6 +12,22 @@
     padding-bottom: 100px;
 }
 
+@media only screen and (max-height: 480px) { 
+    .GridContainer {
+        position: absolute;
+        top: 245%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+        column-gap: 140px;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        min-height: 550px;
+        padding-bottom: 100px;
+    }
+}
+
 @media only screen and (min-width:1080px){
     .GridContainer {
         position: absolute;

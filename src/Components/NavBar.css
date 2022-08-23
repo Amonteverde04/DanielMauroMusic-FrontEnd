@@ -55,6 +55,76 @@
   }
 }
 
+@media only screen and (max-height: 480px) {
+  .NavBar {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .25);
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    top: 0;
+  }
+  
+  .Logo {
+    position: absolute;
+    height: 70%;
+    width: 15%;
+    left: 3%;
+  }
+  
+  .Pages {
+    position: absolute;
+    height: 50%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 7%;
+    top: 27%;
+    left: 18%;
+  }
+  
+  .Socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 5%;
+    height: 50%;
+    width: 40%;
+    right: 3.5%;
+    top: 27%;
+  }
+  
+  .SocialItem {
+    position: relative;
+    color: #F8F2AE;
+  }
+  
+  .Spotify {
+    top: .1em;
+  }
+
+  .Youtube {
+    bottom: .3em;
+  }
+
+  .Instagram {
+    top: .1em;
+  }
+
+  .Tiktok {
+    top: .2em;
+  }
+
+  .SocialItem:hover {
+    transition: ease-in .15s;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(0%) hue-rotate(32deg) brightness(105%) contrast(100%);
+  }
+}
+
+
 @media only screen and (min-width:1080px){
   .NavBar {
     z-index: 2;

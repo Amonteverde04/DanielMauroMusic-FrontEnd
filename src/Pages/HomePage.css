@@ -122,8 +122,117 @@
   color: #F8F2AE;
 }
 
-@media only screen and (min-width:1080px) {
+@media only screen and (max-height: 480px) { 
+  .App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+    background-image: url("https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .NewsLetter {
+    z-index: 2;
+    position: relative;
+    background-image: url(https://media.giphy.com/media/cRd3YuaZmlXFiiNIcY/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    min-height: 11em;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #FFBEB9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .Details {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .InputBox {
+    float: left;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: large;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+  }
+  
+  .NewsButtonContainer {
+    z-index: 6;
+    position: absolute;
+    opacity: .5;
+    width: 3.5em;
+    height: 5em;
+    color: white;
+    top: 75%;
+  }
+  
+  .NewsButton {
+    z-index: 5;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(100%) sepia(0%) saturate(1475%) hue-rotate(179deg) brightness(114%) contrast(100%);
+    width: 100%;
+    background: none;
+    border-style: none;
+    color: black;
+  }
+  
+  .NewsButton:active {
+    opacity: .7;
+  }
+  
+  .SubmitButton {
+    color: black;
+    background-color: #F8F2AE;
+    width: 40%;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .SubmitButton:hover {
+    transition: ease-in .2s;
+    background-color: #FFBEB9;
+    color: white;
+  }
+  
+  .SubmitButton:active {
+    transition: none;
+    background-color: black;
+    color: white;
+  }
+  
+  #hidden {
+    display: none;
+  }
+  
+  #flip {
+    transition: ease-in .1s;
+    transform: rotateX(180deg);
+    opacity: 1;
+  }
+}
 
+@media only screen and (min-width:1080px) {
   .App {
     z-index: -10;
     background-color: black;
