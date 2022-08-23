@@ -20,7 +20,7 @@
 .MovieScreen {
     position: absolute;
     width: 80%;
-    top: 26.5%;
+    top: 24%;
     overflow-y: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */

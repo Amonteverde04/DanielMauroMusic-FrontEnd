@@ -50,7 +50,7 @@ function AdminPage() {
                         <input id='LogInInput' type='text' value={user} onChange={(e)=>{setUser(e.target.value);}} required></input>
                         <br></br>
                         <label>Password</label><br></br>
-                        <input id='LogInInput' type='text' value={password} onChange={(e)=>{setPassword(e.target.value);}} required></input>
+                        <input id='LogInInput' type='password' value={password} onChange={(e)=>{setPassword(e.target.value);}} required></input>
                         <br></br>
                         <button className='LogInSubmit'>Log in</button>
                     </form>

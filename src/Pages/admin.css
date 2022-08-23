@@ -1,4 +1,5 @@
 .App-header-Admin {
+    background-color: #F8F2AE;
     position: absolute;
     min-height: 100vh;
     display: flex;
@@ -76,7 +77,6 @@
 }
 
 .OutsideContainer {
-    background-color: rgba(0, 0, 0, .2);
     width: 100%;
     min-height: 100vh;
     display: flex;
