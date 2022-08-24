@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import './HomePage.css';
-import logo from "../Assets/Logo.png";
 import CopyRight from '../Components/CopyRight';
 import NavBar from '../Components/NavBar';
 import Arrow from '../Assets/upArrow.svg'
@@ -57,7 +56,7 @@ function HomePage() {
 
     return (
         <header className="App-header">
-          <NavBar logo = {logo}></NavBar>
+          <NavBar logo = {"https://i.imgur.com/CywUw4S.png"}></NavBar>
           <form className="NewsLetter" id={ID} onSubmit={handleSubmit}>
               <p className="ErrMessage" id={message.error}>There was an error sending your information.<br></br> Please reload the page and try again!</p>
               <p className="SuccMessage" id={message.success}>Your information has successfully been sent!</p>

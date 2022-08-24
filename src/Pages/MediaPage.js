@@ -1,7 +1,5 @@
 import { useState, useEffect} from 'react';
 import './MediaPage.css';
-import bGImage from "../Assets/MediaBG.jpg";
-import logo from "../Assets/Logo.png";
 import CopyRight from '../Components/CopyRight';
 import NavBar from '../Components/NavBar';
 import VideoGrid from '../Components/VideoGrid';
@@ -74,8 +72,8 @@ function MediaPage() {
 
   return (
       <header className="App-header-Media">
-        <NavBar logo = {logo}></NavBar>
-        <img className="BGGifMedia" src={bGImage} alt="night sky with stars"/>
+        <NavBar logo = {"https://i.imgur.com/CywUw4S.png"}></NavBar>
+        <img className="BGGifMedia" src={"https://i.imgur.com/Fp3mv1P.jpeg"} alt="night sky with stars"/>
         {!isLoading && 
         <div className='MediaContent'>
           <FeaturedVideo/>

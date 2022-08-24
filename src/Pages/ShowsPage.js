@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import './ShowsPage.css';
-import bGImage from "../Assets/ShowsBG.jpg";
-import logo from "../Assets/Logo.png";
 import CopyRight from '../Components/CopyRight';
 import NavBar from '../Components/NavBar';
 import circle from '../Assets/LoadingCircle.svg';
@@ -61,14 +59,14 @@ function ShowsPage() {
 
     return (
         <header className="App-header-Shows">
-          <NavBar className="Nav" logo = {logo}></NavBar>
+          <NavBar className="Nav" logo = {"https://i.imgur.com/CywUw4S.png"}></NavBar>
           <div className="MovieScreen">
             <ul className="ListContainer">
               {!isLoading && shows()}
               {isLoading && <div className='LoadingCircleShows'><img id='Circle' src={circle} alt='Loading'></img></div>}
             </ul>
           </div>
-          <img className="Background" src={bGImage} alt="Swirley background"></img>
+          <img className="Background" src={"https://i.imgur.com/leP1mAE.jpg"} alt="Swirley background"></img>
           <CopyRight></CopyRight>
       </header>
     );
