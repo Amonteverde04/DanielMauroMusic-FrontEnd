@@ -29,7 +29,7 @@ function FeaturedAlbum() {
                 <p className='AlbumDesc'>
                     {albumDesc}
                 </p>
-                <a className='AlbumLink' href={albumSpotifyLink} target="_blank" rel="noopener noreferrer">Presave here!</a>
+                <a className='AlbumLink' href={albumSpotifyLink} target="_blank" rel="noopener noreferrer">Listen here!</a>
             </div>
         </div>
     )
