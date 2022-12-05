@@ -18,7 +18,7 @@ function ShowsPage() {
     });
 
     useEffect(()=>{
-        fetch("https://danielmauromusicbackend.onrender.com/get-shows", {
+        fetch("danielmauromusic-backend-production.up.railway.app/get-shows", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {

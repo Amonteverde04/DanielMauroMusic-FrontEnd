@@ -5,7 +5,7 @@ function FeaturedVideo() {
     const [vidLink, setVidLink] = useState(""); 
 
     useEffect(()=>{
-        fetch("https://danielmauromusicbackend.onrender.com/get-featured-vid", {
+        fetch("danielmauromusic-backend-production.up.railway.app/get-featured-vid", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {

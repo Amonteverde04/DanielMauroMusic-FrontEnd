@@ -8,7 +8,7 @@ function FeaturedAlbum() {
     const [albumSpotifyLink, setSpotifyLink] = useState(""); 
 
     useEffect(()=>{
-        fetch("https://danielmauromusicbackend.onrender.com/get-featured-album", {
+        fetch("danielmauromusic-backend-production.up.railway.app/get-featured-album", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
