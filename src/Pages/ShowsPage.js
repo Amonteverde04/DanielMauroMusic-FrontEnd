@@ -18,7 +18,7 @@ function ShowsPage() {
     });
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend.herokuapp.com/get-shows", {
+        fetch("https://danielmauromusicbackend.onrender.com/get-shows", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {

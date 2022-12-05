@@ -14,7 +14,7 @@ function AdminPage() {
 
     async function logIn(e) {
         e.preventDefault();
-        await fetch("https://danielmauromusic-backend.herokuapp.com/enter-admin", {
+        await fetch("https://danielmauromusicbackend.onrender.com/enter-admin", {
             method: "POST",
             mode: "cors",
             headers: {

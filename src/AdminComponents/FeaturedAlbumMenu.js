@@ -14,7 +14,7 @@ function FeaturedAlbumMenu() {
     const [albumSpotifyLink, setAlbumSpotifyLink] = useState("");
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend.herokuapp.com/get-featured-album", {
+        fetch("https://danielmauromusicbackend.onrender.com/get-featured-album", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -33,7 +33,7 @@ function FeaturedAlbumMenu() {
 
     function updateFeaturedAlbum(e) {
         e.preventDefault();
-        fetch(`https://danielmauromusic-backend.herokuapp.com/put-featured-album`, {
+        fetch(`https://danielmauromusicbackend.onrender.com/put-featured-album`, {
             method: 'PUT',
             mode: 'cors',
             headers: {

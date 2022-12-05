@@ -30,7 +30,7 @@ function HomePage() {
   function handleSubmit(e) {
     e.preventDefault(); // prevent page from reloading... reloading breaks react app
     console.log(name, email);
-    fetch(`https://danielmauromusic-backend.herokuapp.com/post-mailing-list`, {
+    fetch(`https://danielmauromusicbackend.onrender.com/post-mailing-list`, {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify({name,email}),

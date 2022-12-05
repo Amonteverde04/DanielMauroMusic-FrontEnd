@@ -32,7 +32,7 @@ function ShowsMenu() {
     },[]);
 
     function getShows() {
-        fetch("https://danielmauromusic-backend.herokuapp.com/get-shows", {
+        fetch("https://danielmauromusicbackend.onrender.com/get-shows", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -84,7 +84,7 @@ function ShowsMenu() {
     }
 
     function deleteShow(id) {
-        fetch("https://danielmauromusic-backend.herokuapp.com/delete-show", {
+        fetch("https://danielmauromusicbackend.onrender.com/delete-show", {
             method: 'DELETE',
             mode: 'cors',
             headers: {
@@ -123,7 +123,7 @@ function ShowsMenu() {
 
     async function addNewShow(e) {
         e.preventDefault();
-        await fetch("https://danielmauromusic-backend.herokuapp.com/post-show", {
+        await fetch("https://danielmauromusicbackend.onrender.com/post-show", {
             method: 'POST',
             mode: 'cors',
             headers: {

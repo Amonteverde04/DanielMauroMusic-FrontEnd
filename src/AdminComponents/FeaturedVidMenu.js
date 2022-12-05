@@ -7,7 +7,7 @@ function FeaturedVidMenu() {
 
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend.herokuapp.com/get-featured-vid", {
+        fetch("https://danielmauromusicbackend.onrender.com/get-featured-vid", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -21,7 +21,7 @@ function FeaturedVidMenu() {
 
     function handleSubmit(e) {
         e.preventDefault(); // prevent page from reloading... reloading breaks react app
-        fetch(`https://danielmauromusic-backend.herokuapp.com/put-featured-vid`, {
+        fetch(`https://danielmauromusicbackend.onrender.com/put-featured-vid`, {
           method: 'PUT',
           mode: 'cors',
           headers: {
