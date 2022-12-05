@@ -32,7 +32,7 @@ function ShowsMenu() {
     },[]);
 
     function getShows() {
-        fetch("danielmauromusic-backend-production.up.railway.app/get-shows", {
+        fetch("https://danielmauromusic-backend-production.up.railway.app/get-shows", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -84,7 +84,7 @@ function ShowsMenu() {
     }
 
     function deleteShow(id) {
-        fetch("danielmauromusic-backend-production.up.railway.app/delete-show", {
+        fetch("https://danielmauromusic-backend-production.up.railway.app/delete-show", {
             method: 'DELETE',
             mode: 'cors',
             headers: {
@@ -123,7 +123,7 @@ function ShowsMenu() {
 
     async function addNewShow(e) {
         e.preventDefault();
-        await fetch("danielmauromusic-backend-production.up.railway.app/post-show", {
+        await fetch("https://danielmauromusic-backend-production.up.railway.app/post-show", {
             method: 'POST',
             mode: 'cors',
             headers: {

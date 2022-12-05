@@ -14,7 +14,7 @@ function FeaturedAlbumMenu() {
     const [albumSpotifyLink, setAlbumSpotifyLink] = useState("");
 
     useEffect(()=>{
-        fetch("danielmauromusic-backend-production.up.railway.app/get-featured-album", {
+        fetch("https://danielmauromusic-backend-production.up.railway.app/get-featured-album", {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -33,7 +33,7 @@ function FeaturedAlbumMenu() {
 
     function updateFeaturedAlbum(e) {
         e.preventDefault();
-        fetch(`danielmauromusic-backend-production.up.railway.app/put-featured-album`, {
+        fetch(`https://danielmauromusic-backend-production.up.railway.app/put-featured-album`, {
             method: 'PUT',
             mode: 'cors',
             headers: {

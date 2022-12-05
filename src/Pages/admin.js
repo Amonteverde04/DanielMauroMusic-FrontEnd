@@ -14,7 +14,7 @@ function AdminPage() {
 
     async function logIn(e) {
         e.preventDefault();
-        await fetch("danielmauromusic-backend-production.up.railway.app/enter-admin", {
+        await fetch("https://danielmauromusic-backend-production.up.railway.app/enter-admin", {
             method: "POST",
             mode: "cors",
             headers: {
