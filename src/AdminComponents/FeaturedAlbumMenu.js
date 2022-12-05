@@ -33,7 +33,7 @@ function FeaturedAlbumMenu() {
 
     function updateFeaturedAlbum(e) {
         e.preventDefault();
-        fetch(`https://danielmauromusicbackend.onrender.com/put-featured-album`, {
+        fetch(`danielmauromusic-backend-production.up.railway.app/put-featured-album`, {
             method: 'PUT',
             mode: 'cors',
             headers: {
