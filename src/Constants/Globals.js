@@ -1,3 +1,3 @@
-const SERVER_URL = "danielmauromusic-backend-production.up.railway.app.up.railway.app";
+const SERVER_URL = "https://danielmauromusic-backend.herokuapp.com/";
 
 export {SERVER_URL};
