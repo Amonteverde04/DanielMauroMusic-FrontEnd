@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {SERVER_URL} from '../Constants/Globals';
 import './ShowsMenu.css';
 import plus from '../Assets/plus.svg';
 import x from '../Assets/x.svg';
@@ -32,7 +33,7 @@ function ShowsMenu() {
     },[]);
 
     function getShows() {
-        fetch("https://danielmauromusic-backend-production.up.railway.app/get-shows", {
+        fetch(`${SERVER_URL}/get-shows`, {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -84,7 +85,7 @@ function ShowsMenu() {
     }
 
     function deleteShow(id) {
-        fetch("https://danielmauromusic-backend-production.up.railway.app/delete-show", {
+        fetch(`${SERVER_URL}/delete-show`, {
             method: 'DELETE',
             mode: 'cors',
             headers: {
@@ -123,7 +124,7 @@ function ShowsMenu() {
 
     async function addNewShow(e) {
         e.preventDefault();
-        await fetch("https://danielmauromusic-backend-production.up.railway.app/post-show", {
+        await fetch(`${SERVER_URL}/post-show`, {
             method: 'POST',
             mode: 'cors',
             headers: {

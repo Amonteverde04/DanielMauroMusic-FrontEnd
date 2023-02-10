@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {SERVER_URL} from '../Constants/Globals';
 import './HomePage.css';
 import CopyRight from '../Components/CopyRight';
 import NavBar from '../Components/NavBar';
@@ -30,7 +31,7 @@ function HomePage() {
   function handleSubmit(e) {
     e.preventDefault(); // prevent page from reloading... reloading breaks react app
     console.log(name, email);
-    fetch(`https://danielmauromusic-backend-production.up.railway.app/post-mailing-list`, {
+    fetch(`${SERVER_URL}/post-mailing-list`, {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify({name,email}),

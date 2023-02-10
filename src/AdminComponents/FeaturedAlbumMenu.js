@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {SERVER_URL} from '../Constants/Globals';
 import './FeaturedAlbumMenu.css';
 
 function FeaturedAlbumMenu() {
@@ -14,7 +15,7 @@ function FeaturedAlbumMenu() {
     const [albumSpotifyLink, setAlbumSpotifyLink] = useState("");
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend-production.up.railway.app/get-featured-album", {
+        fetch(`${SERVER_URL}/get-featured-album`, {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -33,7 +34,7 @@ function FeaturedAlbumMenu() {
 
     function updateFeaturedAlbum(e) {
         e.preventDefault();
-        fetch(`https://danielmauromusic-backend-production.up.railway.app/put-featured-album`, {
+        fetch(`${SERVER_URL}/put-featured-album`, {
             method: 'PUT',
             mode: 'cors',
             headers: {

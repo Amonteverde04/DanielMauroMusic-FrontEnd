@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {SERVER_URL} from '../Constants/Globals';
 import './FeaturedAlbum.css'
 
 function FeaturedAlbum() {
@@ -8,7 +9,7 @@ function FeaturedAlbum() {
     const [albumSpotifyLink, setSpotifyLink] = useState(""); 
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend-production.up.railway.app/get-featured-album", {
+        fetch(`${SERVER_URL}/get-featured-album`, {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {

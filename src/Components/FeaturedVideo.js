@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import {SERVER_URL} from '../Constants/Globals';
 import './FeaturedVideo.css';
 
 function FeaturedVideo() {
     const [vidLink, setVidLink] = useState(""); 
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend-production.up.railway.app/get-featured-vid", {
+        fetch(`${SERVER_URL}/get-featured-vid`, {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {

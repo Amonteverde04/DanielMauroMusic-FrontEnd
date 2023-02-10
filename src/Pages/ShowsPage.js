@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {SERVER_URL} from '../Constants/Globals';
 import './ShowsPage.css';
 import CopyRight from '../Components/CopyRight';
 import NavBar from '../Components/NavBar';
@@ -18,7 +19,7 @@ function ShowsPage() {
     });
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend-production.up.railway.app/get-shows", {
+        fetch(`${SERVER_URL}/get-shows`, {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {

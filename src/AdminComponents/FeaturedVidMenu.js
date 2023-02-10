@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {SERVER_URL} from '../Constants/Globals';
 import './FeaturedVidMenu.css';
 
 function FeaturedVidMenu() {
@@ -7,7 +8,7 @@ function FeaturedVidMenu() {
 
 
     useEffect(()=>{
-        fetch("https://danielmauromusic-backend-production.up.railway.app/get-featured-vid", {
+        fetch(`${SERVER_URL}/get-featured-vid`, {
             method: 'GET',
             mode: 'cors'
         }).then((response)=> {
@@ -21,7 +22,7 @@ function FeaturedVidMenu() {
 
     function handleSubmit(e) {
         e.preventDefault(); // prevent page from reloading... reloading breaks react app
-        fetch(`https://danielmauromusic-backend-production.up.railway.app/put-featured-vid`, {
+        fetch(`${SERVER_URL}/put-featured-vid`, {
           method: 'PUT',
           mode: 'cors',
           headers: {
